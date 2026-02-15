@@ -27,17 +27,23 @@ Não é um CRUD simples. É um backend orientado a produção.
 
 API
 └── Cria Order
+
 └── Grava Order + Outbox na mesma transação
 
 OutboxDispatcher
 └── Publica mensagens pendentes no RabbitMQ
+
 └── Marca como processadas
 
 Worker
 └── Consome evento
+
 └── Verifica Inbox (idempotência)
+
 └── Processa pedido
+
 └── Retry com backoff via delay queues
+
 └── DLQ após número máximo de tentativas
 
 ---
