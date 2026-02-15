@@ -1,0 +1,16 @@
+@AsyncOrders.Api_HostAddress = https://localhost:7246
+
+GET {{AsyncOrders.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{AsyncOrders.Api_HostAddress}}/orders
+Content-Type: application/json
+
+{
+  "customerId": "CUST-123",
+  "amount": 299.90
+}
+
+###

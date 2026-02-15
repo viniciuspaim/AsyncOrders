@@ -1,0 +1,21 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: asyncorders-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "gZ8kcs/<Y&tWyk9yg+~/l76QB0FV?3XK9k.09OL1(GyXCry%["
+    ports:
+      - "1433:1433"
+    volumes:
+      - asyncorders_sql_data:/var/opt/mssql
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: asyncorders-rabbit
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+volumes:
+  asyncorders_sql_data:

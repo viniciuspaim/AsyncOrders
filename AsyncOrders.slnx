@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="AsyncOrders.Api/AsyncOrders.Api.csproj" />
+  <Project Path="AsyncOrders.Application/AsyncOrders.Application.csproj" />
+  <Project Path="AsyncOrders.Domain/AsyncOrders.Domain.csproj" />
+  <Project Path="AsyncOrders.Infrastructure/AsyncOrders.Infrastructure.csproj" />
+  <Project Path="AsyncOrders.Tests/AsyncOrders.Tests.csproj" />
+  <Project Path="AsyncOrders.Worker/AsyncOrders.Worker.csproj" />
+</Solution>

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AsyncOrders.Api\\AsyncOrders.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AsyncOrders.Worker\\AsyncOrders.Worker.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
